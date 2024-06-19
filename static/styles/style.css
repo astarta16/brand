@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+h1 {
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-weight: 900;
+  font-size: 56px;
+}
+
+.title-description {
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.action-button {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 32px;
+  border: none;
+  padding: 12px 24px 12px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+
+.action-description {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}

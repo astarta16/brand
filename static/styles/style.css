@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-body, html {
+body,
+html {
   display: flex;
   justify-content: center;
   height: 100%;
@@ -39,6 +40,7 @@ h1 {
 .action-block {
   display: flex;
   width: 100%;
+  align-items: baseline;
 }
 
 .action-button {
@@ -64,6 +66,8 @@ h1 {
   width: 100%;
   height: auto;
   margin-top: 20px;
+  object-fit: cover;
+  min-width: 300px;
 }
 
 @media (min-width: 1021px) {
@@ -73,7 +77,8 @@ h1 {
     align-items: flex-start;
   }
 
-  .text-block, .action-block {
+  .text-block,
+  .action-block {
     align-items: flex-start;
     text-align: left;
   }
@@ -95,24 +100,33 @@ h1 {
   }
 }
 
-@media (max-width: 1021px) {
+@media (max-width: 1020px) {
   .content {
     flex-direction: column;
     align-items: center;
   }
 
-  .text-block, .action-block {
-    align-items: center;
-    text-align: center;
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+
+  .right-side img {
+    margin-top: 20px;
+    width: 100%;
   }
 
   .action-block {
-    flex-direction: row; 
-    margin-left: 130px;
-    align-items: center; 
+    justify-content: center;
+    width: 100%;
   }
 
-  .action-description{
-    width: 60%;
+  .action-description {
+    width: 400px;
+    text-align: center;
+  }
+
+  .action-button {
+    margin-bottom: 10px;
   }
 }

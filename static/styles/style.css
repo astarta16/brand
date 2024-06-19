@@ -1,20 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-body,
-html {
+body, html {
   display: flex;
   justify-content: center;
-  height: 100%;
-  margin: 0;
-  padding: 60px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  max-width: 1440px;
+  justify-content: center;
+  width: 100%; 
+  padding: 30px; 
+  box-sizing: border-box;
 }
 
 .text-block {
@@ -36,6 +34,7 @@ h1 {
   font-weight: 400;
   font-size: 18px;
 }
+
 
 .action-block {
   display: flex;
@@ -64,22 +63,23 @@ h1 {
 
 .right-side img {
   width: 100%;
-  height: auto;
+  height: auto; 
   margin-top: 20px;
   object-fit: cover;
   min-width: 300px;
 }
 
+
 @media (min-width: 1021px) {
   .content {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .text-block,
   .action-block {
-    align-items: flex-start;
+    align-items:center;
     text-align: left;
   }
 
@@ -128,5 +128,73 @@ h1 {
 
   .action-button {
     margin-bottom: 10px;
+  }
+}
+
+
+.feature-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F3F3F3;
+  padding: 20px 0;
+  width: 100%; 
+  margin-top: 40px;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.feature-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; 
+  gap: 10px; 
+  margin-bottom: 10px; 
+  width: 100%;
+}
+
+.feature img {
+  width: 50px;
+  height: auto;
+}
+
+.feature h2 {
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: left;
+}
+
+.feature p {
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left; 
+  width: 100%;
+}
+
+@media (max-width: 1020px) {
+  .feature-section {
+    flex-direction: column;
+  }
+
+  .feature {
+    width: 100%; 
+    align-items:center;
+    text-align: center; 
+  }
+
+  .feature-header {
+    flex-direction: row; 
+    justify-content: center;
   }
 }

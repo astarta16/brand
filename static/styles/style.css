@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-body,
-html {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .content {
   display: flex;
   width: 90%;
@@ -228,7 +221,7 @@ h1 {
   font-size: 16px;
 }
 
-.responsive-left{
+.responsive-left {
   margin: 20px;
 }
 
@@ -266,5 +259,37 @@ h1 {
   .promo-text ul li {
     font-size: 16px;
     margin-bottom: 10px;
+  }
+}
+
+.custom-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+}
+
+.custom-footer > div {
+  flex: 1;
+}
+
+.brand {
+  flex: 0 0 auto;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.column h4 {
+  margin-top: 0;
+}
+
+.subscribe {
+  flex: 2;
+}
+
+@media (max-width: 600px) {
+  .custom-footer {
+    flex-direction: column;
   }
 }

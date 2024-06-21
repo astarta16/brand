@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
+
+html {
+  width: 100%;
+}
 .content {
   display: flex;
-  width: 90%;
   padding: 40px;
   box-sizing: border-box;
 }
@@ -267,7 +270,7 @@ h1 {
   justify-content: space-between;
   background-color: #000000;
   color: white;
-  padding: 20px;
+  padding: 80px 100px;
 }
 
 .custom-footer > div {
@@ -277,19 +280,76 @@ h1 {
 .brand {
   flex: 0 0 auto;
   font-size: 24px;
-  font-weight: bold;
 }
 
 .column h4 {
   margin-top: 0;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.column p {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .subscribe {
   flex: 2;
 }
 
-@media (max-width: 600px) {
-  .custom-footer {
-    flex-direction: column;
+.subscribe h4 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.subscribe p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #595959;
+}
+
+@media (max-width: 1024px) {
+  .brand,
+  .column,
+  .subscribe {
+    flex: 1; 
+  }
+  .brand img {
+    max-width: 100%; 
+  }
+
+  .subscribe {
+    display: none;
   }
 }
+
+@media (max-width: 600px) {
+  .custom-footer {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px; 
+  }
+  .brand {
+    order: 0;
+    text-align: center; 
+    width: 100%; 
+  }
+  .column {
+    margin-top: 20px; 
+  }
+  .column div {
+    flex: 1;
+    text-align: center; 
+  }
+  .subscribe {
+    order: 1;
+    text-align: center; 
+    width: 100%;
+  }
+}
+
+
+

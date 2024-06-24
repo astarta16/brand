@@ -18,15 +18,27 @@ html {
   box-sizing: border-box;
 }
 
-.text-block {
+.text-block,
+.feature,
+.feature-header {
   text-align: center;
+}
+
+.text-block {
   margin-bottom: 20px;
+}
+
+.title-description,
+.feature p {
+  font-weight: 400;
+  font-size: 18px;
 }
 
 h1,
 .title-description,
 .action-description .feature h2,
-.feature p {
+.feature p,
+.navbar a {
   font-family: "Inter", sans-serif;
 }
 
@@ -34,11 +46,6 @@ h1 {
   font-weight: 900;
   font-size: 56px;
   margin-bottom: 30px;
-}
-
-.title-description {
-  font-weight: 400;
-  font-size: 18px;
 }
 
 .action-block {
@@ -56,6 +63,14 @@ h1 {
   font-size: 16px;
   font-weight: 700;
   margin-right: 10px;
+}
+
+.feature-section,
+.custom-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px;
+  background-color: #f3f3f3;
 }
 
 .action-description {
@@ -146,10 +161,6 @@ h1 {
 }
 
 .feature-section {
-  display: flex;
-  justify-content: space-between;
-  background-color: #f3f3f3;
-  padding: 40px 50px;
   margin-top: 40px;
 }
 
@@ -160,7 +171,6 @@ h1 {
 
 .feature {
   flex: 1;
-  text-align: center;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -186,8 +196,6 @@ h1 {
 
 .feature p {
   color: #000000;
-  font-weight: 400;
-  font-size: 16px;
   text-align: left;
   width: 100%;
 }
@@ -299,11 +307,8 @@ h1 {
 }
 
 .custom-footer {
-  display: flex;
-  justify-content: space-between;
   background-color: #000000;
   color: white;
-  padding: 80px 100px;
 }
 
 .custom-footer > div {
@@ -476,14 +481,12 @@ h1 {
   margin-right: 10px;
 }
 @media (max-width: 744px) {
-  .menu {
+  .menu,
+  .action-button-header {
     display: none;
   }
   .menu-btn {
     display: block;
-  }
-  .action-button-header {
-    display: none;
   }
 }
 
@@ -525,10 +528,6 @@ h1 {
 
   .overlay-text p,
   .overlay-text button {
-    font-size: 12px;
-  }
-
-  .navbar a {
     font-size: 12px;
   }
 }

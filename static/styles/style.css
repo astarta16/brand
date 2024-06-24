@@ -6,6 +6,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 *,
 *:before,
 *:after {
@@ -14,8 +18,35 @@ html {
 
 .content {
   display: flex;
-  padding: 40px;
+  padding-top: 5%;
   box-sizing: border-box;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.left-side {
+  margin-right: 20px;
+}
+
+.left-side h1 {
+  font-weight: 900;
+  font-size: 56px;
+  margin-bottom: 30px;
+}
+
+.left-side p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.action-button {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .text-block,
@@ -28,7 +59,6 @@ html {
   margin-bottom: 20px;
 }
 
-.title-description,
 .feature p {
   font-weight: 400;
   font-size: 18px;
@@ -40,12 +70,6 @@ h1,
 .feature p,
 .navbar a {
   font-family: "Inter", sans-serif;
-}
-
-h1 {
-  font-weight: 900;
-  font-size: 56px;
-  margin-bottom: 30px;
 }
 
 .action-block {
@@ -317,7 +341,7 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 70px 50px;
   background-color: #000;
   color: white;
 }

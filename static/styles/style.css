@@ -260,6 +260,11 @@ h1 {
 .promo-text p {
   font-weight: 400;
   font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.promo-text li {
+  margin-bottom: 15px;
 }
 
 .responsive-left {
@@ -303,6 +308,7 @@ h1 {
   .promo-text ul li {
     text-align: center;
     font-size: 14px;
+    margin: 10px;
   }
 }
 
